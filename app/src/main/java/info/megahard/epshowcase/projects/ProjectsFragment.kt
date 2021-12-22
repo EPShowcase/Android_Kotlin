@@ -5,12 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import info.megahard.epshowcase.R
 import info.megahard.epshowcase.databinding.PlaceholderFragmentBinding
 
 class ProjectsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = PlaceholderFragmentBinding.inflate(inflater)
-        binding.name = "Projects"
+        binding.name = getString(R.string.projects)
         return binding.root
     }
 }

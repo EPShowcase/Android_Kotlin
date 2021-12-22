@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import info.megahard.epshowcase.R
@@ -13,13 +14,13 @@ import info.megahard.epshowcase.databinding.BioFragmentBinding
 
 class BioFragment : BaseFragment() {
 
+    private val viewModel: BioViewModel by viewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         super.onCreateView(inflater, container, savedInstanceState)
-
-        val viewModel = ViewModelProviders.of(activity!!).get(BioViewModel::class.java)
 
         val binding: BioFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.bio_fragment, container, false)
 

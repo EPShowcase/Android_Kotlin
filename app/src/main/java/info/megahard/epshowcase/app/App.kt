@@ -1,6 +1,7 @@
 package info.megahard.epshowcase.app
 
 import android.app.Application
+import androidx.multidex.MultiDexApplication
 import info.megahard.epshowcase.BuildConfig
 import timber.log.Timber
 import toothpick.Toothpick
@@ -10,7 +11,8 @@ import toothpick.configuration.Configuration.forProduction
 import toothpick.registries.FactoryRegistryLocator
 import toothpick.registries.MemberInjectorRegistryLocator
 
-class App : Application() {
+class App : MultiDexApplication() {
+
     override fun onCreate() {
         super.onCreate()
 

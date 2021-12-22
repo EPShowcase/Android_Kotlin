@@ -11,4 +11,7 @@
     <string name="main_title_experience">Experience</string>
     <string name="main_title_projects">Projects</string>
     <string name="linked_in_profile">LinkedIn Profile</string>
+    <string name="skills">Skills</string>
+    <string name="projects">Projects</string>
+    <string name="experience">Experience</string>
 </resources>
